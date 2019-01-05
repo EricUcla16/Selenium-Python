@@ -10,7 +10,7 @@ chrome_options = Options()
 chrome_options.add_argument("--disable-extensions")
 
 
-driver = webdriver.Chrome(options=chrome_options, executable_path="/users/ericgarthoffner/Desktop/Misc/chromedriver")
+driver = webdriver.Chrome(options=chrome_options)
 #driver = webdriver.Chrome()
 
 driver.set_page_load_timeout(100)
