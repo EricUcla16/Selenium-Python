@@ -6,13 +6,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 chrome_options = Options()
-chrome_options.add_argument("--headless")
+#chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-extensions")
 
 
-#driver = webdriver.Chrome(options=chrome_options, executable_path="/users/ericgarthoffner/Desktop/Misc/chromedriver")
 driver = webdriver.Chrome(options=chrome_options)
-
 #driver = webdriver.Chrome()
 
 driver.set_page_load_timeout(100)
@@ -33,6 +31,8 @@ driver.find_element_by_name("q").send_keys("Automation step by step")
 #element = wait.until(EC.element_to_be_clickable((By.NAME, "btnk")))
 
 driver.find_element_by_xpath("//*[@id='tsf']/div[2]/div/div[3]/center/input[1]").click()
+
+driver.get("Https://yahoo.com")
 
 print(driver.title)
 
