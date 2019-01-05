@@ -33,6 +33,8 @@ driver.find_element_by_name("q").send_keys("Automation step by step")
 driver.find_element_by_xpath("//*[@id='tsf']/div[2]/div/div[3]/center/input[1]").click()
 
 driver.get("Https://yahoo.com")
+driver.get("Https://espn.com")
+
 
 print(driver.title)
 
